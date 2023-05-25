@@ -1,6 +1,6 @@
 # Setup Script
 
-This setup script is designed to automate the installation and configuration process for various development environments. It allows you to choose the programming language, database, web server, and additional tools to set up on your system.
+This setup script is designed to automate the installation and configuration process for various development environments. It now runs all the scripts automatically, no longer requiring manual input.
 
 ## Prerequisites
 
@@ -30,6 +30,8 @@ You can customize the setup script by modifying the individual setup scripts in 
 - The `languages` directory contains setup scripts for different programming languages.
 - The `databases` directory contains setup scripts for different databases.
 - The `system` directory contains setup scripts for system configurations, such as web servers, dock configuration, Oh My Zsh, etc.
+- The tools directory contains setup scripts for additional tools such as `Slack`, `Spotify`, and `GitHub Desktop`.
+- The `customize` directory contains setup scripts for system customizations like dock setup.
 
 You can update the existing setup scripts or create new ones to add support for additional components or customize the installation process according to your requirements.
 
