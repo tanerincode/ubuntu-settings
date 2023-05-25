@@ -35,10 +35,21 @@ echo -e "${GREEN}Welcome to the setup script${NC}"
 code --version > /dev/null 2>&1 || (./IDE/vscode_setup.sh & spinner $!)
 # LANGUAGES
 node --version > /dev/null 2>&1 || (./languages/nodejs_setup.sh & spinner $!)
-go version > /dev/null 2>&1 || (./languages/go_setup.sh & spinner﻿
+go version > /dev/null 2>&1 || (./languages/go_setup.sh & spinner $!)
+
+# SERVER
+nginx -v > /dev/null 2>&1 || (./system/nginx_setup.sh & spinner $!)
+
+# DATABASES
+mysql --version > /dev/null 2>&1 || (./databases/mysql_setup.sh & spinner $!)
+mongod --version > /dev/null 2>&1 || (./databases/mongodb_setup.sh & spinner $!)
+psql --version > /dev/null 2>&1 || (./databases/postgresql_setup.sh & spinner $!)
+
 # RUN TOOLS
 which slack > /dev/null 2>&1 || (./tools/slack_setup.sh & spinner $!)
+which spotify > /dev/null 2>&1 || (./tools/spotify_setup.sh & spinner $!)
 [ -d "$HOME/.oh-my-zsh" ] || (./tools/ohmyzsh_setup.sh & spinner $!)
+which github-desktop > /dev/null 2>&1 || (./tools/github_desktop_setup.sh & spinner $!)
 
 # CUSTOMIZE
 ./customize/dock_setup.sh & spinner $!
