@@ -13,5 +13,3 @@ then
 else
     echo "PostgreSQL is already installed."
 fi
-
-echo "PostgreSQL installation process is complete!"

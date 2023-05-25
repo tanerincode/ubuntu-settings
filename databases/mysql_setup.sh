@@ -14,4 +14,3 @@ else
     echo "MySQL is already installed."
 fi
 
-echo "MySQL installation process is complete!"

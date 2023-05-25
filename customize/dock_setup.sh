@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Define some colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
 # resize icons
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 38
 
@@ -11,5 +17,3 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'LEFT'
 
 # Turn autohide to off
 gsettings set org.gnome.shell.extensions.dash-to-dock autohide false
-
-echo "Dock setting complete!"
