@@ -27,10 +27,10 @@ This setup script is designed to automate the installation and configuration pro
 
 You can customize the setup script by modifying the individual setup scripts in the corresponding directories. Each setup script is responsible for installing and configuring a specific component.
 
-- The `languages` directory contains setup scripts for different programming languages.
-- The `databases` directory contains setup scripts for different databases.
-- The `system` directory contains setup scripts for system configurations, such as web servers, dock configuration, Oh My Zsh, etc.
-- The tools directory contains setup scripts for additional tools such as `Slack`, `Spotify`, and `GitHub Desktop`.
+- The `languages` directory contains setup scripts for different `programming languages`.
+- The `databases` directory contains setup scripts for different `databases`.
+- The `system` directory contains setup scripts for system configurations, such as `web servers`, `dock configuration`, `Oh My Zsh`, etc.
+- The `tools` directory contains setup scripts for additional tools such as `Slack`, `Spotify`, and `GitHub Desktop`.
 - The `customize` directory contains setup scripts for system customizations like dock setup.
 
 You can update the existing setup scripts or create new ones to add support for additional components or customize the installation process according to your requirements.
